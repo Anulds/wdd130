@@ -49,6 +49,7 @@ main section {
 }
 
 #background {
+
     background-color: #1f4471;
     height: 725px;
 }
@@ -166,6 +167,11 @@ a {
 
 .card-img {
     border: 10px solid #1f4471;
+}
+
+.mountains {
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 main section img {
