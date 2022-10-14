@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Whitewater Rafting Vacations | RiverBay Park Boating | Contact Us</title>
 </head>
+
 <body background="images/Banner.jpg">
     
     <header>
@@ -58,7 +59,7 @@
         </section>
     </main>
 -->
-    
+    <div id="feedback">Helllllo!</div>
     <div class="container">
         <h1>Contact Us</h1>
         <p>We would love to respond to your queries and help you succeed.</p>
@@ -67,11 +68,11 @@
                 <img id="ConImg" src = "images/Camping.jpg" alt="CampingGuy">
             </div>
             <div class="contact-right">
-                <form>
+                <form id="FormT">
                     <div class="input-row">
                         <div class="input-group">
                             <label>First Name</label>
-                            <input type="text" >
+                            <input type="text" name="user_name">
                         </div>
                         <div class="input-group">
                             <label>Last Name</label>
@@ -87,8 +88,8 @@
                     <div class="input-row">
                         <div class="input-group">
                             <label>What can we help you with?</label>
-                           <textarea rows="10" cols="100"></textarea>
-                           <button type="submit">Submit</button>
+                            <textarea rows="10" cols="100"></textarea>
+                            <button type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -113,6 +114,23 @@
             </a>
         </div>
     </footer>
-    </body>     
+    </body>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            
+        });
+    </script>
 </html>
 
