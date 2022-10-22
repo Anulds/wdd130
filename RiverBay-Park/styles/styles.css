@@ -127,7 +127,7 @@ nav a {
 
 #hero h4 {
     width: 700px;
-    color: #ffe600;
+    color: #ffffff;
     position: absolute;
     top: 350px;
     left: 20px;
@@ -266,6 +266,9 @@ footer p a:hover {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
 
+    background-color: #ffff;
+    color: #cb23a6;
+
 }
 
 footer .social img {
@@ -341,19 +344,16 @@ main section img {
 body .cover {
     align-items: center;
     display: flex;
-
 }
 
 .cover {
     font-family: "Montserrat", sans-serif;
     width: 800px;
     height: 400px;
-    padding-top: 400px;
 }
 
 .box {
-
-    margin-top: -500px;
+    margin-top: 200px;
     margin-left: 180px;
     padding-left: 30px;
     width: 800px;
