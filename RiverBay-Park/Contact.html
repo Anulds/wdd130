@@ -8,7 +8,7 @@
     <title>Whitewater Rafting Vacations | RiverBay Park Boating | Contact Us</title>
 </head>
 
-<body background="images/Banner3.jpg">
+<body background="images/Banner3.jpg" alt="colours">
     <div id="feedback">Helllllo!</div>
     <header>
         <a id="logo_link" href="index.html" target="_blank">
@@ -56,7 +56,7 @@
                 </form>
             </div>
             <div class="contact-right">
-                <img id="ConImg" src = "images/rafting6.jpg">
+                <img id="ConImg" src = "images/rafting6.jpg" alt="RaftingPeople">
             </div>
             
         </div>
@@ -86,13 +86,13 @@
         const formElement = document.forms[0];
         // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
             
         });
     </script>
